@@ -1,0 +1,27 @@
+tabs:
+  - label: Home
+    icon:
+      set: lucide
+      name: home
+    subtabs:
+      - label: Placeholder
+        path: /
+        icon:
+          set: lucide
+          name: play-square
+  - label: Guides
+    icon:
+      set: lucide
+      name: book-open
+    subtabs:
+      - label: Placeholder
+        path: /guides/
+  - label: API Reference
+    icon:
+      set: lucide
+      name: square-code
+    subtabs:
+      - label: Placeholder
+        path: /api/
+
+

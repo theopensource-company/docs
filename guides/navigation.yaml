@@ -1,0 +1,16 @@
+---
+- heading: Getting Started
+  items:
+  - label: Editing your docs
+    href: ./
+  - label: Publishing your docs
+    href: ./publishing.md
+
+- heading: How-To's
+  items:
+  - label: Adding OpenAPI specs
+    href: ./openapi.md
+  - label: Tabs and subtabs
+    href: ./tabs.md
+  - label: Using partials
+    href: ./partials.md

@@ -1,0 +1,24 @@
+# This title is shown in the browser tab title
+title: New Project
+
+# You can specify light and dark mode logos to make sure they
+# work in different backgrounds.
+logo:
+  src: _assets/logo.png
+  src_dark: _assets/logo-dark.png
+
+# You can add multiple custom stylesheets.
+styles:
+  - _assets/style.css
+
+# Customize the color theme of your docs
+colors:
+  main: "#7B8FFE"
+  main_dark: "#7B8FFE"
+
+# OpenAPI specifications are first imported here, and then
+# have to mention in a `navigation.yaml` file in order to
+# show up in the project's navigation.
+open_api:
+  - spec_file: openapi-example.yaml
+    uri_prefix: /api/reference

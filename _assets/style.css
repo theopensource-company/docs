@@ -1,0 +1,132 @@
+/*
+ * ================== CUSTOM STYLES =========================
+ *
+ * ## What are custom styles for?
+ *
+ * Sometimes you'll want to use CSS to tweak parts of your content or add
+ * some stylign to a custom HTML partial. This is what custom styles are
+ * great for.
+ *
+ * ## When should I **not** use custom styles?
+ *
+ * - Changing the colors of sections. Instead, use color themes:
+ *   https://docs.doctave.com/customization/look-and-feel#color-themes
+ *
+ * - If you want to make big changes to your page. Doctave does not guarantee
+ *   backwards compatibility if you make large changes to the layout of the page.
+ *
+ * ================== CUSTOM STYLES =========================
+ */
+
+
+/*
+ * Styles for the custom callout component
+ *
+ * You can customize these to fit your look and feel.
+ *
+ */
+
+.callout {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: solid 1px;
+  border-radius: 8px;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.callout.callout-info {
+  border-color: #0ea5e9;
+  background: rgb(125, 211, 252, 0.2);
+}
+
+.callout.callout-success {
+  border-color: #10b981;
+  background: rgb(187, 247, 208, 0.2);
+}
+
+.callout.callout-error {
+  border-color: #f43f5e;
+  background: rgb(254, 205, 211, 0.2);
+}
+
+.callout.callout-warning {
+  border-color: #f59e0b;
+  background: rgb(253, 230, 138, 0.2);
+}
+
+/*
+ * Styles for the landing page CTA section, where we want to emphasize a couple Markdown links.
+ */
+
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+  text-align: center !important;
+}
+
+.cta * {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.cta a {
+  text-decoration: none !important;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.4rem;
+  display: block;
+  max-width: 16rem;
+  min-width: 12rem;
+}
+
+.cta > p:first-child > a {
+  background: var(--doctave-theme-main);
+  color: #fff !important;
+}
+
+.cta > p:nth-child(2) > a {
+  border: 1px solid var(--doctave-theme-main);
+  color: var(--doctave-theme-main);
+}
+
+.cta a:hover {
+  opacity: 0.8;
+}
+
+/*
+ * Style for the "next step" section at the bottom of tutorials.
+ *
+ * Note the use of the `.dark` class, which lets you set different styles for dark mode.
+ *
+ */
+
+.dark .next-step a {
+  background: var(--doctave-theme-content-bg-secondary-dark);
+}
+
+.next-step a:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+}
+
+.next-step a {
+  background: var(--doctave-theme-content-bg-secondary);
+  display: block;
+  text-decoration: none !important;
+  text-align: center;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.4rem;
+}
